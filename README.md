@@ -3,6 +3,10 @@ Little backend app written with python3.10 and fastapi to extract date data from
 
 ## Running the app
 Just build and run `Dockerfile` at the top of the repository with port binding.
+```shell
+docker build . --tag pdf_extractor
+docker run -p 8080:8080 pdf_extractor
+```
 Note: Dockerfile exposes 8080 port.
 
 ### API
